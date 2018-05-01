@@ -52,7 +52,8 @@ before_deploy:
 
 deploy:
   - skip_cleanup: true
-  - echo Entering \'deploy\' step
+  - provider: script
+  - script: echo Entering \'deploy\' step
 
 after_deploy:
    - echo Entering \'after_deploy\' step
