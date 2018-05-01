@@ -52,9 +52,9 @@ before_deploy:
    - echo Entering \'before_deploy\' step
 
 deploy:
-  - skip_cleanup: true
-  - provider: script
-  - script: echo Entering \'deploy\' step
+  skip_cleanup: true
+  provider: script
+  script: bash -c "echo Entering \'deploy\' step"
 
 after_deploy:
    - echo Entering \'after_deploy\' step
