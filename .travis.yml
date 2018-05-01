@@ -22,7 +22,8 @@ cache:
        
 addons:
   apt:
-    sources: ppa:cwchien/gradle
+    sources: 
+       - sourceline: "ppa:cwchien/gradle"
     packages: gradle-4.7
     
 before_install:
